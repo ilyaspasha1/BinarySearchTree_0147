@@ -35,4 +35,29 @@ public :
         Node *newNode =new Node();
         //step2
         newNode->info =x;
-       
+        //step 3
+        newNode-> leftchild= nullptr;
+        newNode->righchild =nullptr;
+        //step 4
+        Node *parent = nullptr;
+        Node *currentNode =nullptr;
+        search(x,parent,currentNode);
+
+        //step5
+        if (parent = nullptr)
+        {
+            //5a mark the new node as roota
+            ROOT = newNode;
+
+            //5b : exit 
+            return;
+        }
+        //step 7 if the value in the data fieldm of new node is greater than that of the parent
+        else if (x > parent->info)
+        {
+            //7a make the righ child of parent  point to the newe node 
+            parent->righchild =newNode;
+            //7b 
+            return;
+        }
+   
