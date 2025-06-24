@@ -109,4 +109,10 @@ public :
         if (ptr == nullptr)
             return;
 
-       
+        cout<<ptr->info<<endl;
+        preorder(ptr->leftchild);
+        preorder(ptr->righchild);
+        
+        
+    }
+    
