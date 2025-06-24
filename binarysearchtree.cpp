@@ -91,3 +91,12 @@ public :
         }
         if (ptr == nullptr)
             return;
+
+
+        inorder(ptr->leftchild);
+        cout<<ptr->info<<endl;
+        inorder(ptr->righchild);
+        
+        
+    }
+    
