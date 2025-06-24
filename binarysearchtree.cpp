@@ -124,3 +124,10 @@ public :
         }
         if (ptr == nullptr)
             return;
+
+        postorder(ptr->leftchild);
+        postorder(ptr->righchild);
+        cout<<ptr->info<<endl;
+        
+    }
+    
