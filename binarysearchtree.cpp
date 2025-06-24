@@ -130,4 +130,9 @@ public :
         cout<<ptr->info<<endl;
         
     }
-    
+    bool isEmpty()
+    {
+        //check if the tree is empty
+        return ROOT == nullptr;
+    }
+};
