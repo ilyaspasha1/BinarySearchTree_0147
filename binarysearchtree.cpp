@@ -25,4 +25,14 @@ public :
     {
         ROOT= nullptr;
     }
-    
+    void insert ()
+    {
+        int x;
+        cout<<"masulan nili :";
+        cin>>x;
+
+        //step 1
+        Node *newNode =new Node();
+        //step2
+        newNode->info =x;
+       
